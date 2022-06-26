@@ -1,4 +1,4 @@
   RewriteCond %{HTTP_HOST} ^notbugit.com$ [NC,OR]
   RewriteCond %{HTTP_HOST} ^www.notbugit.com$
-  RewriteCond %{REQUEST_URI} !notbugit/public/
-  RewriteRule (.*) /notbugit/public/$1 [L]
+  RewriteCond %{REQUEST_URI} !notbugit.com/public/
+  RewriteRule (.*) /notbugit.com/public/$1 [L]
