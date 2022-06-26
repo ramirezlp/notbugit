@@ -10,7 +10,7 @@
                     <h1 class="h1-large">Impulsamos tu <span class="replace-me">negocio, empresa, startup</span></h1>
 
                     <p class="p-large">El éxito de una compañía está directamente relacionado con la calidad de sus productos digitales. <b>Por eso te ayudamos a digitalizarte</b>.</p>
-                    <a class="btn-solid-lg" href="#features">Nuestros Servicios</a>
+                    <a class="btn-solid-lg" href="#features">Nuestros Servicioss</a>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->
             <div class="col-lg-6">
