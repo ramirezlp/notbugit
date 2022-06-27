@@ -294,7 +294,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/instagram10.png" alt="alternative">
+                                        <img class="card-image" src="images/Instagram10.png" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-author">Agustin Ramirez</p>
                                             <p class="testimonial-text">Software Engineer</p>
@@ -306,7 +306,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/instagram11.png" alt="alternative">
+                                        <img class="card-image" src="images/Instagram11.png" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-author">Camila Ramirez</p>
                                             <p class="testimonial-text">Brand Manager</p>
