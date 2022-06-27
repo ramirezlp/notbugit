@@ -1,7 +1,11 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Mail\Mailable;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MailController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+
+Route::post('/contacto', [MailController::class, 'send']);
+

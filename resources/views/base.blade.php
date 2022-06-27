@@ -16,7 +16,7 @@
         <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
         <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
         <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
         <!-- Webpage Title -->
         <title>NotBug IT</title>
         
@@ -28,7 +28,7 @@
         {{ HTML::style('css/fontawesome-all.min.css') }}
         
         <!-- Favicon  -->
-        <link rel="icon" href="images/favicon.png">
+        <link rel="icon" href="images/faviconb.png">
     </head>
     <body data-bs-spy="scroll" data-bs-target="#navbarExample">
         
@@ -57,19 +57,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#details">Nosotros</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                                <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                                <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                            </ul>
-                        </li>
                     </ul>
                     <span class="nav-item">
-                        <a class="btn-outline-sm" href="log-in.html">Contacto</a>
+                        <a class="btn-outline-sm" href="#contacto">Contacto</a>
                     </span>
                 </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
@@ -90,36 +80,37 @@
                             <p class="p-small" style="margin-bottom: 0px; font-size: 25px;">La Plata 1900, Argentina</p>
                         </div> <!-- end of footer-col -->
                         <div class="footer-col second">
-                            <p class="p-small" style="margin-bottom: 7px; font-size: 25px;">+54 (221) 633-5888</p>
+                            <p class="p-small" style="margin-bottom: 7px; font-size: 25px;">+54 (221) 627-3888</p>
                             <p class="p-small" style="margin-bottom: 0px; font-size: 25px;"><a href="mailto:contacto@notbugit.com">contacto@notbugit.com</a></p>
                         </div> 
                             <!-- end of footer-col -->
 
                         <div class="footer-col third">
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://www.instagram.com/notbugit/">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x"></i>
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-twitter fa-stack-1x"></i>
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-pinterest-p fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-instagram fa-stack-1x"></i>
-                                </a>
-                            </span>
+
 
                             
                             
@@ -136,7 +127,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="p-small">Copyright © <a href="#your-link">NotBug IT</a></p>
+                        <p class="p-small">Copyright © <a href="">NotBug IT</a></p>
                     </div> <!-- end of col -->
 <!--
                     <div class="col-lg-6">
@@ -161,5 +152,8 @@
         {{ HTML::script('js/purecounter.min.js') }}
         {{ HTML::script('js/replaceme.min.js') }}
         {{ HTML::script('js/scripts.js') }}
+        {{ HTML::script('js/jquery.min.js') }}
+
+        @yield('js')   
     </body>
 </html>

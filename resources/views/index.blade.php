@@ -56,8 +56,7 @@
                                 Soluciones web escalables para respaldar el crecimiento de su negocio, creando productos
                                 digitales y generando experiencias increíbles.
                             </p>
-                            <a class="btn-solid-reg btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver
-                                más</a>
+                            
                         </div>
                     </div>
                     <!-- end of card -->
@@ -71,8 +70,7 @@
                             <h4 class="card-title">Desarrollo Móvil</h4>
                             <p>Creamos aplicaciones móviles nativas e híbridas, diseñadas para mejorar procesos dentro de tu
                                 empresa y conectarte con tus clientes.</p>
-                            <a class="btn-solid-reg btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver
-                                más</a>
+                            
                         </div>
                     </div>
                     <!-- end of card -->
@@ -86,8 +84,7 @@
                             <h4 class="card-title">Community Management</h4>
                             <p>Las redes sociales son los espacios de la web donde los usuarios pasan más tiempo online.
                                 Ofrecemos servicios de estrategia y gestión de comunidades.</p>
-                            <a class="btn-solid-reg btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver
-                                más</a>
+                            
                         </div>
                     </div>
                     <!-- end of card -->
@@ -101,8 +98,7 @@
                             <h4 class="card-title">Marketing y Publicidad</h4>
                             <p>Analizamos las oportunidades de mejora en pos
                                 de una nueva estrategia de marketing centralizada en el producto y el cliente.</p>
-                            <a class="btn-solid-reg btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver
-                                más</a>
+                            
                         </div>
                     </div>
                     <!-- end of card -->
@@ -118,8 +114,7 @@
                                 intensificando la digitalización y automatización junto con la adopción de tecnologías
                                 ágiles.
                             </p>
-                            <a class="btn-solid-reg btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver
-                                más</a>
+                            
                         </div>
                     </div>
                     <!-- end of card -->
@@ -134,8 +129,7 @@
                             <p>Investigamos al usuario y analizamos la usabilidad de las aplicaciones, generando mejores
                                 productos con la mejor experiencia.
                             </p>
-                            <a class="btn-solid-reg btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver
-                                más</a>
+                            
                         </div>
                     </div>
                     <!-- end of card -->
@@ -348,74 +342,79 @@
 
 
     <!-- Questions -->
-    <div class="accordion-1">
+    <div class="accordion-1"  style="padding-bottom: 10px;padding-top: 50px;"id="contacto">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Nosotros</h2>
+                    <h2 class="h2-heading">Contacto</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="accordion" id="accordionExample">
+                <div class="col-xl-6 offset-xl-3">
+                    <div class="text-box mb-5">
+                        <p class="mb-4 text-center">Escribinos, estamos para resolver cualquier duda.</p>
 
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How
-                                    can I contact you quickly and get a reasonable quote more for my project?</button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Sed lacinia cursus viverra. Nunc sed libero euismod, congue dui
-                                    a, vulputate quam. Pellentesque neque nisi, ultrices ut ipsum ac, mattis sollicitudin
-                                    neque. Ut ac nunc sem. Etiam id erat facilisis magna sagittis porta. Donec eu dolor eu
-                                    dolor finibus sodales consectetur, et condimentum elit tincidunt</div>
+                        <!-- Sign Up Form -->
+                        <form id="form_contact" method="post" action='/contacto'>
+                            <div class="mb-4 form-floating">
+                                <input type="email" name="email" required autocomplete="off" class="form-control" id="floatingInput" placeholder="nombre@example.com">
+                                <label for="floatingInput">Correo electrónico</label>
                             </div>
-                        </div>
-                        <!-- end of accordion-item -->
-
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is
-                                    the Free Tier available for unlimited time or it will end more words after a
-                                    while?</button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Mauris faucibus placerat nisl. Sed eros odio, posuere at felis
-                                    quis, tincidunt facilisis nibh. Nulla in ante sem. Nam aliquam urna nisi, cursus semper
-                                    dolor convallis at. Duis vulputate est in consectetur, et condimentum elit tincidunt
-                                    libero consectetur, et condimentum suis vulputate est in libero</div>
+                            <div class="mb-4 form-floating">
+                                <input type="text" name="name" required autocomplete="off" class="form-control" id="floatingInput2" placeholder="Tu Nombre">
+                                <label for="floatingInput2">Nombre</label>
                             </div>
-                        </div>
-                        <!-- end of accordion-item -->
-
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">Can I use the app on mobile devices or it’s limited more
-                                    words to desktop use?</button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Nullam at diam at mi facilisis consectetur at non turpis. Proin
-                                    a felis nisi. Sed at orci rutrum, tincidunt magna vel, pharetra libero. Proin mauris
-                                    orci, faucibus eget malesuada vel, consectetur, et condimentum elit tincidunt
-                                    pellentesque vitae ligula. Pellentesque euismod tincidun</div>
+                            <div class="mb-4 form-floating">
+                                <textarea autocomplete="off" name="description" required style="
+                                    height: 200px;
+                                    " class="form-control" rows="3" id="floatingInput3" placeholder="Descripción" ></textarea>
+                                <label for="floatingInput3">Descripción</label>
                             </div>
-                        </div>
-                        <!-- end of accordion-item -->
+                            <button type="submit" class="form-control-submit-button">Enviar consulta</button>
+                            <p class="text-center mt-2 d-none" id="mensaje">* Mensaje enviado correctamente *</p>
+                        </form>
+                        <!-- end of sign up form -->
+            
 
-                    </div> <!-- end of accordion -->
+                    </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-            </div> <!-- end of row -->
+            </div>
         </div> <!-- end of container -->
     </div> <!-- end of accordion-1 -->
     <!-- end of questions -->
+
+@endsection
+@section('js')
+
+<script>
+    $(document).ready(function () {
+        $(document).on("submit", "#form_contact", function(event)
+    {
+        event.preventDefault();        
+        const data = Object.fromEntries(new FormData(event.target).entries());
+        $.ajax({
+            url: $(this).attr("action"),
+            type: $(this).attr("method"),
+            headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+            data: data,
+            success: function (data, status)
+            {
+                if(data.ok){
+                    $('#form_contact').trigger("reset");
+                    $("#mensaje").removeClass('d-none')
+                }
+            },
+            error: function (xhr, desc, err)
+            {
+
+
+            }
+        });        
+    });  
+    });
+        
+
+
+</script>
+
 @endsection
