@@ -18,7 +18,7 @@
         <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>Ioniq Webpage Title</title>
+        <title>NotBug IT</title>
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
             <div class="container">
 
                 <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo_icono_violeta.png" alt="alternative"></a> 
+                <a class="navbar-brand logo-image" href=""><img src="images/logo_icono_violeta.png" alt="alternative"></a> 
 
                 <!-- Text Logo - Use this if you don't have a graphic logo -->
                 <!-- <a class="navbar-brand logo-text" href="index.html">Ioniq</a> -->
@@ -52,13 +52,10 @@
                             <a class="nav-link active" aria-current="page" href="#header">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
+                            <a class="nav-link" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#details">Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
+                            <a class="nav-link" href="#details">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
@@ -72,7 +69,7 @@
                         </li>
                     </ul>
                     <span class="nav-item">
-                        <a class="btn-outline-sm" href="log-in.html">Log in</a>
+                        <a class="btn-outline-sm" href="log-in.html">Contacto</a>
                     </span>
                 </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
@@ -89,17 +86,15 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-col first">
-                            <h6>About Website</h6>
-                            <p class="p-small">Proin ut felis purus vestibulum in orci molestie, efficitur lacus ac pellentesque elit. Fusce mollis laoreet lobortis nulla ac efficitur lacus ac </p>
+                            <p class="p-small" style="margin-bottom: 7px; font-size: 25px;">Calle 48 N°630 PISO 8C</p>
+                            <p class="p-small" style="margin-bottom: 0px; font-size: 25px;">La Plata 1900, Argentina</p>
                         </div> <!-- end of footer-col -->
                         <div class="footer-col second">
-                            <h6>Links</h6>
-                            <ul class="list-unstyled li-space-lg p-small">
-                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                                <li>Menu: <a href="#header">Home</a>, <a href="#features">Features</a>, <a href="#details">Details</a>, <a href="#pricing">Pricing</a></li>
-                            </ul>
-                        </div> <!-- end of footer-col -->
+                            <p class="p-small" style="margin-bottom: 7px; font-size: 25px;">+54 (221) 633-5888</p>
+                            <p class="p-small" style="margin-bottom: 0px; font-size: 25px;"><a href="mailto:contacto@notbugit.com">contacto@notbugit.com</a></p>
+                        </div> 
+                            <!-- end of footer-col -->
+
                         <div class="footer-col third">
                             <span class="fa-stack">
                                 <a href="#your-link">
@@ -125,7 +120,9 @@
                                     <i class="fab fa-instagram fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <p class="p-small">Quam posuerei pellent esque vam <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+
+                            
+                            
                         </div> <!-- end of footer-col -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -138,13 +135,13 @@
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © <a href="#your-link">NotBug IT</a></p>
                     </div> <!-- end of col -->
-
+<!--
                     <div class="col-lg-6">
                         <p class="p-small">Distributed By<a href="https://themewagon.com/"> Themewagon</a></p>    
-                    </div> <!-- end of col -->
+                    </div>  end of col -->
                 </div> <!-- enf of row -->
             </div> <!-- end of container -->
         </div> <!-- end of copyright --> 
@@ -158,6 +155,7 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
+        {{ HTML::script('js/8933f06950.js') }}
         {{ HTML::script('js/bootstrap.min.js') }}
         {{ HTML::script('js/swiper.min.js') }}
         {{ HTML::script('js/purecounter.min.js') }}
