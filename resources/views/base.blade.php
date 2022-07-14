@@ -22,10 +22,10 @@
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-        {{ HTML::style('css/bootstrap.min.css') }}
-        {{ HTML::style('css/swiper.css') }}
-        {{ HTML::style('css/styles.css') }}
-        {{ HTML::style('css/fontawesome-all.min.css') }}
+        {{ Html::style('css/bootstrap.min.css') }}
+        {{ Html::style('css/swiper.css') }}
+        {{ Html::style('css/styles.css') }}
+        {{ Html::style('css/fontawesome-all.min.css') }}
         
         <!-- Favicon  -->
         <link rel="icon" href="images/faviconb.png">
@@ -146,13 +146,13 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
-        {{ HTML::script('js/8933f06950.js') }}
-        {{ HTML::script('js/bootstrap.min.js') }}
-        {{ HTML::script('js/swiper.min.js') }}
-        {{ HTML::script('js/purecounter.min.js') }}
-        {{ HTML::script('js/replaceme.min.js') }}
-        {{ HTML::script('js/scripts.js') }}
-        {{ HTML::script('js/jquery.min.js') }}
+        {{ Html::script('js/8933f06950.js') }}
+        {{ Html::script('js/bootstrap.min.js') }}
+        {{ Html::script('js/swiper.min.js') }}
+        {{ Html::script('js/purecounter.min.js') }}
+        {{ Html::script('js/replaceme.min.js') }}
+        {{ Html::script('js/scripts.js') }}
+        {{ Html::script('js/jquery.min.js') }}
 
         @yield('js')   
     </body>
