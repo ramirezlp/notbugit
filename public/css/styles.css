@@ -487,6 +487,11 @@ a:hover {
 	margin-bottom: 1.75rem;
 }
 
+.header .btn-outline-lg {
+	display: block;
+	margin-bottom: 1.75rem;
+}
+
 .header .text-container {
 	margin-bottom: 5rem;
 }
@@ -1209,6 +1214,11 @@ a:hover {
 	}
 
 	.header .btn-solid-lg {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.header .btn-outline-lg {
 		display: inline-block;
 		margin-bottom: 0;
 	}
