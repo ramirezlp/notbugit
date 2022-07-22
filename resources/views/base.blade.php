@@ -33,7 +33,7 @@
     <body data-bs-spy="scroll" data-bs-target="#navbarExample">
         
         <!-- Navigation -->
-        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light pr-10" aria-label="Main navigation">
             <div class="container">
 
                 <!-- Image Logo -->
@@ -49,18 +49,69 @@
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ms-auto navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#header">{{__('base.menu.home')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#servicios">Servicios</a>
+                            <a class="nav-link" href="#servicios">{{__('base.menu.services')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#details">Nosotros</a>
+                            <a class="nav-link" href="#details">{{__('base.menu.about')}}</a>
                         </li>
                     </ul>
+                    <div class="dropdown" style="margin-right: 60px;">
+                        <div class="dropdown-toggle" style="width: 30px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @if ( Config::get('app.locale') == 'en')
+                            
+                            <img src="images/us.png" style="width: 100%;" alt="english" />
+                            <span style="
+                            padding-top: 0.625rem;
+                            padding-bottom: 0.625rem;
+                            color: #272556;
+                            text-decoration: none;
+                            transition: all 0.2s ease">English</span>
+                         
+                            @else
+                         
+                            <img src="images/spain.png" style="width: 100%;" alt="spanish" />
+                            <span style="
+                            padding-top: 0.625rem;
+                            padding-bottom: 0.625rem;
+                            color: #272556;
+                            text-decoration: none;
+                            transition: all 0.2s ease">Español</span>
+                         
+                            @endif
+
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="/en"><img src="images/us.png" style="width: 20%;" alt="english" /> <span>English</span></a>
+                          <a class="dropdown-item" href="/es"><img src="images/spain.png" style="width: 20%;" alt="spanish" /> <span>Español</span></a>
+                        </div>
+                      </div>
+
+
+                    <!--
                     <span class="nav-item">
                         <a class="btn-outline-sm" href="#contacto">Contacto</a>
-                    </span>
+                    </span> 
+                    <div class="nav-item dropdown ml-5">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <span>
+                                <img src="images/spain.png" style="width: 10%;" alt="spanish" /> 
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" style="width: 20px;" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="article.html">
+                            <img src="images/us.png" style="width: 20%;" alt="english" />    
+                            </a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="article.html">
+                                <img src="images/spain.png" style="width: 20%;" alt="spanish" /> 
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                -->
                 </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
         </nav> <!-- end of navbar -->
@@ -76,8 +127,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-col first">
-                            <p class="p-small" style="margin-bottom: 7px; font-size: 25px;">Calle 48 N°630 PISO 8C</p>
-                            <p class="p-small" style="margin-bottom: 0px; font-size: 25px;">La Plata 1900, Argentina</p>
+                            <p class="p-small" style="margin-bottom: 7px; font-size: 25px;">{{ __('base.footer.street') }}</p>
+                            <p class="p-small" style="margin-bottom: 0px; font-size: 25px;">{{ __('base.footer.city') }}</p>
                         </div> <!-- end of footer-col -->
                         <div class="footer-col second">
                             <p class="p-small" style="margin-bottom: 7px; font-size: 25px;">+54 (221) 627-3888</p>

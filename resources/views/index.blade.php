@@ -7,11 +7,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h1 class="h1-large">Digitalizamos tu <span class="replace-me">negocio, empresa, startup</span></h1>
+                        <h1 class="h1-large">{{ __('base.carrousel.title')}} <span class="replace-me">{{ __('base.carrousel.title_color')}}</span></h1>
 
-                        <p class="p-large">El éxito de una compañía está directamente relacionado con la calidad de sus
-                            productos digitales. <b>Por eso te ayudamos a digitalizarte</b>.</p>
-                        <a class="btn-solid-lg" href="#servicios">Nuestros Servicios</a>
+                        <p class="p-large">{{ __('base.carrousel.text') }} <b>{{ __('base.carrousel.text_bold') }}</b></p>
+                        <a class="btn-solid-lg" href="#servicios">{{ __('base.carrousel.services') }}</a>
+                        <span class="nav-item">
+                        <a class="btn-outline-sm" style="padding: 1.625rem 2.625rem 1.625rem 2.625rem;" href="#contacto">{{ __('base.carrousel.contact') }}</a>
+                    </span> 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -30,15 +32,8 @@
         <div class="container">
             <div class="row" style="margin-bottom: 70px;">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading" style="margin-bottom: 10px;">Servicios</h2>
-                    <p class="p-large">Somos un equipo interdisciplinario de programadores, diseñadores, redactores y
-                        emprendedores que
-                        buscamos digitalizar organizaciones apalancándonos en <span
-                            style="color: #6c55f9;
-                    text-decoration: underline;">los procesos actuales,
-                            los datos, la tecnología disponible, la experiencia y la cultura.</span> Te ayudamos a generar
-                        una ruta digital que impulse tu negocio de forma sostenible.
-                    </p>
+                    <h2 class="h2-heading" style="margin-bottom: 10px;">{{ __('base.services.title')}}</h2>
+
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -51,10 +46,9 @@
                             <span class=" fas fa-solid fa-laptop-code"></span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Desarrollo Web</h4>
+                            <h4 class="card-title">{{ __('base.services.web_title')}}</h4>
                             <p>
-                                Soluciones web escalables para respaldar el crecimiento de su negocio, creando productos
-                                digitales y generando experiencias increíbles.
+                                {{ __('base.services.web_text') }}
                             </p>
                             
                         </div>
@@ -67,9 +61,8 @@
                             <span class="fas fa-mobile"></span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Desarrollo Móvil</h4>
-                            <p>Creamos aplicaciones móviles nativas e híbridas, diseñadas para mejorar procesos dentro de tu
-                                empresa y conectarte con tus clientes.</p>
+                            <h4 class="card-title">{{ __('base.services.mobile_title') }}</h4>
+                            <p>{{ __('base.services.mobile_text') }}</p>
                             
                         </div>
                     </div>
@@ -81,9 +74,8 @@
                             <span class="fas fa-hashtag"></span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Community Management</h4>
-                            <p>Las redes sociales son los espacios de la web donde los usuarios pasan más tiempo online.
-                                Ofrecemos servicios de estrategia y gestión de comunidades.</p>
+                            <h4 class="card-title">{{ __('base.services.cm_title') }}</h4>
+                            <p>{{ __('base.services.cm_text') }}</p>
                             
                         </div>
                     </div>
@@ -95,9 +87,8 @@
                             <span class="fas fa-bullhorn"></span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Marketing y Publicidad</h4>
-                            <p>Analizamos las oportunidades de mejora en pos
-                                de una nueva estrategia de marketing centralizada en el producto y el cliente.</p>
+                            <h4 class="card-title">{{ __('base.services.marketing_title')}}</h4>
+                            <p>{{ __('base.services.marketing_text')}}</p>
                             
                         </div>
                     </div>
@@ -109,10 +100,8 @@
                             <span class="fas fa-chart-line"></span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Mejora de procesos</h4>
-                            <p>Ponemos foco en los procesos administrativos,
-                                intensificando la digitalización y automatización junto con la adopción de tecnologías
-                                ágiles.
+                            <h4 class="card-title">{{ __('base.services.process_title')}}</h4>
+                            <p>{{ __('base.services.marketing_text')}}
                             </p>
                             
                         </div>
@@ -125,9 +114,8 @@
                             <span class="fas fa-layer-group"></span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Diseño UX/UI</h4>
-                            <p>Investigamos al usuario y analizamos la usabilidad de las aplicaciones, generando mejores
-                                productos con la mejor experiencia.
+                            <h4 class="card-title">{{ __('base.services.uxui_title')}}</h4>
+                            <p>{{ __('base.services.uxui_text')}}
                             </p>
                             
                         </div>
@@ -145,19 +133,19 @@
     <div id="details" class="basic-1 bg-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Nuestros valores</h2>
-                        <p>Fomentamos la creatividad, la innovación y la mejora constante para obtener productos de calidad.
-                        </p>
-                        <p>Utilizamos las últimas tecnologías en el mercado. Somos impulsores del software de código abierto
-                            y seleccionamos lo que mejor se adapte al problema a resolver.</p>
-                        <p>Realizamos nuestro trabajo utilizando metodologías ágiles.</p>
-                        <p>Aprendemos de nuestros errores y compartimos el aprendizaje. El feedback es un punto muy
-                            importante para nosotros.</p>
+                <div class="col-lg-7 col-xl-6">
+                    <div class="text-container mt-0">
+                        <h3>{{ __('base.aboutus.aboutus_title')}}</h3>
+                        <p>{{ __('base.aboutus.aboutus_text')}}</p>
+                        <h5>{{ __('base.aboutus.our_values_title') }}</h5>
+                        <p style="margin-bottom: 10px;">{{ __('base.aboutus.our_values_text_3') }}</p>
+                        <p  style="margin-bottom: 10px;">{{ __('base.aboutus.our_values_text_1') }}</p>
+                        
+                        <p>{{ __('base.aboutus.our_values_text_2') }}</p>
+                        
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
+                <div class="col-lg-5 col-xl-6">
                     <div class="image-container">
                         <img class="img-fluid" src="images/details-1.svg" alt="alternative">
                     </div> <!-- end of image-container -->
@@ -230,16 +218,13 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Software escalable</h2>
-                        <p>Desarrollamos aplicaciones con las mejores tecnologías del mercado que permiten escalar
-                            a lo largo del tiempo.
+                        <h2>{{ __('base.software.title') }}</h2>
+                        <p>{{ __('base.software.text_1') }}
                         </p>
                         <p>
-                            Conseguir alta performance, escalabilidad y un software confiable,
-                            implica la implementación de una arquitectura sostenible y un diseño que imprima calidad en el
-                            proyecto.
+                            {{ __('base.software.text_2') }}
                         </p>
-                        <h5>Nuestro Stack</h5>
+                        <h5>{{ __('base.software.stack') }}</h5>
                         <p>
                             <span class="fa-brands fa-python" style="font-size:30px"></span>
                             <span class="fa-brands fa-php" style="font-size:30px"></span>
@@ -274,7 +259,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Nosotros</h2>
+                    <h2 class="h2-heading">{{ __('base.team')}}</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -346,32 +331,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Contacto</h2>
+                    <h2 class="h2-heading">{{ __('base.contact.title')}}</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-xl-6 offset-xl-3">
                     <div class="text-box mb-5">
-                        <p class="mb-4 text-center">Escribinos, estamos para resolver cualquier duda.</p>
+                        <p class="mb-4 text-center">{{ __('base.contact.text')}}</p>
 
                         <!-- Sign Up Form -->
                         <form id="form_contact" method="post" action='/contacto'>
                             <div class="mb-4 form-floating">
                                 <input type="email" name="email" required autocomplete="off" class="form-control" id="floatingInput" placeholder="nombre@example.com">
-                                <label for="floatingInput">Correo electrónico</label>
+                                <label for="floatingInput">{{ __('base.contact.mail')}}</label>
                             </div>
                             <div class="mb-4 form-floating">
                                 <input type="text" name="name" required autocomplete="off" class="form-control" id="floatingInput2" placeholder="Tu Nombre">
-                                <label for="floatingInput2">Nombre</label>
+                                <label for="floatingInput2">{{ __('base.contact.name')}}</label>
                             </div>
                             <div class="mb-4 form-floating">
                                 <textarea autocomplete="off" name="description" required style="
                                     height: 200px;
                                     " class="form-control" rows="3" id="floatingInput3" placeholder="Descripción" ></textarea>
-                                <label for="floatingInput3">Descripción</label>
+                                <label for="floatingInput3">{{ __('base.contact.description')}}</label>
                             </div>
-                            <button type="submit" class="form-control-submit-button">Enviar consulta</button>
-                            <p class="text-center mt-2 d-none" id="mensaje">* Mensaje enviado correctamente *</p>
+                            <button type="submit" class="form-control-submit-button">{{ __('base.contact.button')}}</button>
+                            <p class="text-center mt-2 d-none" id="mensaje">{{ __('base.contact.message')}}</p>
                         </form>
                         <!-- end of sign up form -->
             

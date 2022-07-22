@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Mail\Mailable;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
@@ -24,3 +25,10 @@ Route::get('/', function () {
 
 Route::post('/contacto', [MailController::class, 'send']);
 
+Route::get('/{locale}', function ($locale) {
+    if($locale === 'en')
+    App::setLocale($locale);
+    else
+    App::setLocale('es');
+    return view('index');
+});
