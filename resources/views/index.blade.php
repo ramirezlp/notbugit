@@ -10,9 +10,9 @@
                         <h1 class="h1-large">{{ __('base.carrousel.title')}} <span class="replace-me">{{ __('base.carrousel.title_color')}}</span></h1>
 
                         <p class="p-large">{{ __('base.carrousel.text') }} <b>{{ __('base.carrousel.text_bold') }}</b></p>
-                        <a class="btn-solid-lg" style="padding: 1.625rem 2.625rem 1.625rem 2.625rem;" href="#servicios">{{ __('base.carrousel.services') }}</a>
+                        <a class="btn-solid-lg" href="#servicios">{{ __('base.carrousel.services') }}</a>
                         <span class="nav-item">
-                        <a class="btn-outline-sm" style="padding: 1.625rem 2.625rem 1.625rem 2.625rem;" href="#contacto">{{ __('base.carrousel.contact') }}</a>
+                        <a class="btn-outline-lg" href="#contacto">{{ __('base.carrousel.contact') }}</a>
                     </span> 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -327,7 +327,7 @@
 
 
     <!-- Questions -->
-    <div class="accordion-1"  style="padding-bottom: 10px;padding-top: 50px;"id="contacto">
+    <div class="accordion-1"  style="padding-bottom: 10px;padding-top: 80px;"id="contacto">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
