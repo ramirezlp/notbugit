@@ -282,7 +282,17 @@
                                     </div>
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
-
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                       <img class="card-image" src="images/mica.jpeg" alt="alternative">
+                                           <div class="card-body">
+                                                 <p class="testimonial-author">Micaela Bertolini</p>
+                                                  <p class="testimonial-text mb-0">Content Manager</p>
+                                                  <p class="mb-0"><a target="_blank" href="https://www.linkedin.com/in/micaelabertolini/"><i class="fa-brands fa-linkedin"></i></a></p>
+                                          </div>
+                                     </div>
+                               </div> <!-- end of swiper-slide -->
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
@@ -294,6 +304,7 @@
                                         </div>
                                     </div>
                                 </div> <!-- end of swiper-slide -->
+
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
