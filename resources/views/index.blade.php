@@ -276,7 +276,8 @@
                                         <img class="card-image" src="images/Instagram10.png" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-author">Agustin Ramirez</p>
-                                            <p class="testimonial-text">Software Engineer</p>
+                                            <p class="testimonial-text mb-0">Software Engineer</p>
+                                            <p class="mb-0"><a target="_blank" href="https://www.linkedin.com/in/agustin-ramirez-9a3618150/"><i class="fa-brands fa-linkedin"></i></a></p>
                                         </div>
                                     </div>
                                 </div> <!-- end of swiper-slide -->
@@ -288,7 +289,8 @@
                                         <img class="card-image" src="images/Instagram11.png" alt="alternative">
                                         <div class="card-body">
                                             <p class="testimonial-author">Camila Ramirez</p>
-                                            <p class="testimonial-text">Brand Manager</p>
+                                            <p class="testimonial-text mb-0">Brand Manager</p>
+                                            <p class="mb-0"><a target="_blank" href="https://www.linkedin.com/in/rzcamila/"><i class="fa-brands fa-linkedin"></i></a></p>
                                         </div>
                                     </div>
                                 </div> <!-- end of swiper-slide -->
